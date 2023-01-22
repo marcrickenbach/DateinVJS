@@ -1,3 +1,14 @@
+/*
+ * Datein
+ * Author: Marc Rickenbach
+ * 
+ * Note: this is a work in progress.
+ * 
+ * Working example can (or will) be found at https://datein.marcrickenbach.com
+ * 
+ */
+
+
 import Info from "./Components/Info.js";
 import Clear from "./Components/Clear.js"
 import {
