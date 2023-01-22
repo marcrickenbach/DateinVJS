@@ -9,6 +9,7 @@ const Disable = (ch) => {
     let d = document.getElementById('dBtn');
 
     switch (ch) {
+
         case 0:
             statusFlags[1] = false;
             statusFlags[2] = false;
@@ -20,6 +21,7 @@ const Disable = (ch) => {
             d.style.backgroundColor = 'white';
             d.style.color = 'black';
             break;
+
         case 1:
             statusFlags[0] = false;
             statusFlags[2] = false;
@@ -31,6 +33,7 @@ const Disable = (ch) => {
             d.style.backgroundColor = 'white';
             d.style.color = 'black';
             break;
+
         case 2:
             statusFlags[0] = false;
             statusFlags[1] = false;
@@ -42,6 +45,7 @@ const Disable = (ch) => {
             d.style.backgroundColor = 'white';
             d.style.color = 'black';
             break;
+
         case 3:
             statusFlags[0] = false;
             statusFlags[1] = false;
@@ -53,6 +57,7 @@ const Disable = (ch) => {
             c.style.backgroundColor = 'white';
             c.style.color = 'black';
             break;
+
         default:
             console.log('Write Channel Toggle Error');
             break;
