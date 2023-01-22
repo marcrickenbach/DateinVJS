@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/datein.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- <script type="text/JavaScript"src="../src/p5/p5.js"></script> -->
+
+    <title>Datein</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row pt-4 menuBtns dateinBtn" id="dateinBtn">
+            <div class="col-md-3 pt-2 dateinBtn">
+                <button class='menuBtns' id="dateinInfoBtn">DATEIN</button>
+            </div>
+            <div class="col-sm-12 col-md-9 pt-2 menuBtnSized" align="center">
+                <button class="menuBtns" id="aBtn">A</button>
+                <button class="menuBtns" id="bBtn">B</button>
+                <button class="menuBtns" id="cBtn">C</button>
+                <button class="menuBtns" id="dBtn">D</button>
+                <button class="menuBtns" id="writeBtn">Write</button>
+                <button class="playBtn playing" id="playBtn">Play</button>
+                <button class="" id="lastBtn">Last</button>
+                <button class='menuButton regButton clearButton' id="clearBtn">Clear</button>
+                <input class='dateinTitle' type='file' id='inputFile' hidden />
+                <label class="menuButton regButton chooseFileBtn" for="inputFile">File</label>
+            </div>
+            <div class="col-12 pt-4 menuBar">
+                <div class='menuBar' id="knobMenu"></div>
+            </div>
+        </div>
+        <div class='col-12 visuals' id="beatvisual"></div>
+        <div class="row ">
+            <div class="col">
+                <div class="binaryBody" id="binaryBody" align="center">
+                    <div align="center">
+                        <p>i~|*_*|~i</p>
+                        <p>Load a file to get started</p>
+                        <p>i~|*_*|~i</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/src/pureknob.js"></script>
+    <script type="module" src="/src/datein.js"></script>
+    <script type="module" src="/src/Components/BeatVisual.js"></script>
+
+</body>
+
+</html>

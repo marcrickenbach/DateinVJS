@@ -1,0 +1,20 @@
+{
+  "name": "dateinvjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "Marc Rickenbach",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "lite-server": "^2.6.1",
+    "sweetalert2": "^11.7.0",
+    "tone": "^14.7.77"
+  }
+}

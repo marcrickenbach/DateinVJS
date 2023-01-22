@@ -1,0 +1,112 @@
+@media (min-width: 300px) {
+    .dateinBtn {
+      text-align: center;
+    }
+  
+  }
+
+@media (min-width: 576px) {
+    .dateinBtn {
+      text-align: center;
+    }
+  
+  }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .dateinBtn {
+      text-align: right;
+    }
+    
+    .menuBtnSized {
+        text-align: center;
+    }
+
+}
+
+.visuals {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.modalLink,
+.modalLink:visited {
+  color:saddlebrown;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.modalLink:hover {
+  color:coral;
+  text-decoration: none;
+}
+
+
+
+.menuBtns {
+    font-family: monospace;
+    font-size: medium;
+    background-color: white;
+}
+
+.playing {
+  background-color: green;
+  color:white;
+}
+
+.paused {
+  background-color: green;
+  color:white;
+}
+
+.menuBar {
+  padding-top: 20px;
+}
+
+.chooseFileBtn {
+  background-color:white;
+  color: black;
+  cursor:crosshair;
+  border: 2px; /* Green */
+  border-style: outset;
+  border-color: darkgrey;
+  padding:1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#binaryBody {
+  text-align: justify;
+  white-space: 'break-spaces';
+  overflow-wrap:break-word;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  display: block;
+}
+
+.highlight_A {
+  background-color: blue;
+  color: white;
+  opacity: 75%;
+}
+
+.highlight_B {
+  background-color: chocolate;
+  color: white;
+  opacity: 75%;
+}
+
+.highlight_C {
+  background-color: darkred;
+  color: white;
+  opacity: 75%;
+}
+
+.highlight_D {
+  background-color: darkgreen;
+  color: white;
+  opacity: 75%;
+}
