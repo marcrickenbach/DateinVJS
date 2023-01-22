@@ -1,12 +1,7 @@
 import { READCHANNELS, statusFlags, toggleA, toggleB, toggleC, toggleD } from './Buttons.js';
 import Disable from './Disable.js';
-
 import { CURRENTCHANNEL_WR } from './Buttons.js';
 
-/*
-    write = 0
-    read = 1
- */
 
 const PaintUI = (e) => {
 

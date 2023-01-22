@@ -1,8 +1,6 @@
 import Disable from "./Disable.js";
 import PaintUI from "./PaintUI.js";
 import { popLast, PREVIOUS_SCREEN, lastEnabledTog, lastEnabled, synthPlay } from '../datein.js';
-import * as dateinTone from "/node_modules/tone/build/Tone.js";
-import { meterA } from "../datein.js";
 
 export const statusFlags = [false,false,false,false,false,false,false,false]; 
 export const READCHANNELS = []; 
@@ -10,6 +8,7 @@ export const WRITECHANNELS = [true, false, false, false];
 export let CURRENTCHANNEL_WR; 
 
 export const mute = [true, true, true, true]; 
+
 
 
 export const toggleA = () => {
@@ -40,6 +39,8 @@ export const toggleA = () => {
     console.log('A Channel | Status ' + statusFlags[0]);
 };
 
+
+
 export const toggleB = () => {
     statusFlags[1] = !statusFlags[1]; 
     let b = document.getElementById('bBtn');
@@ -67,6 +68,8 @@ export const toggleB = () => {
     }
     console.log('B Channel | Status ' + statusFlags[1]);
 };
+
+
 
 export const toggleC = () => {
     statusFlags[2] = !statusFlags[2]; 
@@ -96,6 +99,8 @@ export const toggleC = () => {
     console.log('C Channel | Status ' + statusFlags[2]);
 };
 
+
+
 export const toggleD = () => {
     statusFlags[3] = !statusFlags[3]; 
     let d = document.getElementById('dBtn');
@@ -124,6 +129,8 @@ export const toggleD = () => {
     console.log('D Channel | Status ' + statusFlags[3]);
 };
 
+
+
 export const toggleWrite = () => {
     statusFlags[4] = !statusFlags[4]; 
     console.log("RD", READCHANNELS);
@@ -141,14 +148,14 @@ export const toggleWrite = () => {
         }
         // Load Previously saved Write Channels to UI
         PaintUI(0);
-
     } else {
         write.style.backgroundColor = 'white';
         PaintUI(1);
-
     }
     console.log('Write | Status ' + statusFlags[4]);
 };
+
+
 
 export const togglePlay = () => {
     statusFlags[5] = !statusFlags[5]; 
@@ -165,6 +172,8 @@ export const togglePlay = () => {
     console.log('Play | Status ' + statusFlags[5]);
 };
 
+
+
 export const toggleLast = () => {
     console.log('Last was pressed');
     statusFlags[6] = !statusFlags[6]; 
@@ -173,6 +182,8 @@ export const toggleLast = () => {
     document.getElementById("lastBtn").disabled = true;
     lastEnabledTog(false);
 };
+
+
 
 export const toggleClear = () => {
     statusFlags[7] = !statusFlags[7]; 
