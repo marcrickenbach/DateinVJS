@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run usemin",
+    "clean": "rimraf dist",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
     "lite": "lite-server"
@@ -14,7 +17,12 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "lite-server": "^2.6.1",
+    "rimraf": "^4.1.1",
     "sweetalert2": "^11.7.0",
+    "terser": "^5.16.1",
     "tone": "^14.7.77"
+  },
+  "devDependencies": {
+    "usemin-cli": "^0.6.0"
   }
 }

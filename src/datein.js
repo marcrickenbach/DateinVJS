@@ -21,6 +21,7 @@ import {
     toggleLast,
     mute
 } from './Components/Buttons.js';
+
 import * as dateinTone from "/node_modules/tone/build/Tone.js";
 import * as Visuals from "./Components/BeatVisual.js";
 
@@ -28,6 +29,7 @@ import { convertToBinary, reader } from "./Components/FileLoad.js";
 import { statusFlags, WRITECHANNELS, READCHANNELS } from "./Components/Buttons.js";
 import { CURRENTCHANNEL_WR } from "./Components/Buttons.js";
 import { INITIAL_FRAME } from "./Components/FileLoad.js";
+// import { Tone } from 'tone/build/esm/core/Tone.js';
 export let PREVIOUS_SCREEN = '';
 
 dateinInfoBtn.addEventListener('click', () => { Info() });
